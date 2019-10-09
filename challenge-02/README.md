@@ -4,50 +4,59 @@ Nesse exercício, você está livre para escolher os nomes para suas variáveis 
 
 ```js
 // Crie uma função que receba dois argumentos e retorne a soma dos mesmos.
-?
+function soma(x, y) {
+.... return x + y;
+.... }
 
 // Declare uma variável que receba a invocação da função criada acima, passando dois números quaisquer por argumento, e somando `5` ao resultado retornado da função.
-?
+var exe = soma(5, 2) + 5;
 
 // Qual o valor atualizado dessa variável?
-?
+12
 
 // Declare uma nova variável, sem valor.
-?
+var curso;
 
 /*
 Crie uma função que adicione um valor à variável criada acima, e retorne a string:
     O valor da variável agora é VALOR.
 Onde VALOR é o novo valor da variável.
 */
-?
+function valor($curso) {
+.... return 'O valor da variável agora é' + ' ' + $curso;
+.... }
 
 // Invoque a função criada acima.
-?
+valor(3000)
 
 // Qual o retorno da função? (Use comentários de bloco).
-?
-
 /*
+'O valor da variável agora é 3000'
+*/
 Crie uma função com as seguintes características:
 1. A função deve receber 3 argumentos;
 2. Se qualquer um dos três argumentos não estiverem preenchidos, a função deve retornar a string:
     Preencha todos os valores corretamente!
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
-?
+function exercicio(x, y, z) {
+.... if (x === null || y === null || z === null) {
+.... return 'Preencha todos os campos corretamente';
+.... } else { 
+.... return x * y * z + 2;
+}
 
 // Invoque a função criada acima, passando só dois números como argumento.
-?
+exercicio(2, 3);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+// NaN
 
 // Agora invoque novamente a função criada acima, mas passando todos os três argumentos necessários.
-?
+exercicio(2,3,6);
 
 // Qual o resultado da invocação acima? (Use comentários para mostrar o valor retornado).
-?
+// 38
 
 /*
 Crie uma função com as seguintes características:
