@@ -40,7 +40,7 @@ Crie uma função com as seguintes características:
 3. O retorno da função deve ser a multiplicação dos 3 argumentos, somando `2` ao resultado da multiplicação.
 */
 function exercicio(x, y, z) {
-.... if (x === null || y === null || z === null) {
+.... if (x === undefined || y === undefined || z === undefined) {
 .... return 'Preencha todos os campos corretamente';
 .... } else { 
 .... return x * y * z + 2;
